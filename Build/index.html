@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | WebGL Test AR</title>
+    <script src="js/lib/aframe.min.js"></script>
+    <script src="js/lib/aframe-ar.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script src="js/app.js"></script>
+
+  </head>
+
+  <body style="margin: 0px; overflow: hidden;">
+    <a-scene embedded arjs vr-mode-ui="enabled: false" copycanvas>
+      <div id="unityContainer" style="z-index: 2" ></div>
+      <!-- <a-marker preset="hiro"> <a-box></a-box> </a-marker> -->
+      <!-- <a-marker type="pattern" url="data/markers/pattern-arjs.patt"><a-box></a-box></a-marker> -->
+      <!-- <a-marker type="pattern" url="data/markers/test.patt" markercontroller="name : hiro"></a-marker> -->
+
+			<a-marker type="pattern" url="data/markers\1.patt" markercontroller="name : 1"></a-marker>
+			<a-marker type="pattern" url="data/markers\2.patt" markercontroller="name : 2"></a-marker>
+			<a-marker type="pattern" url="data/markers\3.patt" markercontroller="name : 3"></a-marker>
+			<a-marker type="pattern" url="data/markers\4.patt" markercontroller="name : 4"></a-marker>
+			<a-marker type="pattern" url="data/markers\5.patt" markercontroller="name : 5"></a-marker>
+			<a-marker type="pattern" url="data/markers\pattern-Astronau.patt" markercontroller="name : pattern-Astronau"></a-marker>
+			<a-marker type="pattern" url="data/markers\pattern-Flower.patt" markercontroller="name : pattern-Flower"></a-marker>
+			<a-marker type="pattern" url="data/markers\pattern1.patt" markercontroller="name : pattern1"></a-marker>
+			<a-marker type="pattern" url="data/markers\pattern2.patt" markercontroller="name : pattern2"></a-marker>
+			<a-marker type="pattern" url="data/markers\pattern3.patt" markercontroller="name : pattern3"></a-marker>
+			<a-marker type="pattern" url="data/markers\pattern4.patt" markercontroller="name : pattern4"></a-marker>
+			<a-marker type="pattern" url="data/markers\pattern5.patt" markercontroller="name : pattern5"></a-marker>
+			<a-marker type="pattern" url="data/markers\pattern6.patt" markercontroller="name : pattern6"></a-marker>
+			<a-marker type="pattern" url="data/markers\pattern7.patt" markercontroller="name : pattern7"></a-marker>
+			<a-marker type="pattern" url="data/markers\post.patt" markercontroller="name : post"></a-marker>
+			<a-marker type="pattern" url="data/markers\pre.patt" markercontroller="name : pre"></a-marker>
+			<a-marker type="pattern" url="data/markers\whatsapp.patt" markercontroller="name : whatsapp"></a-marker>
+
+      <a-entity camera cameratransform></a-entity>
+    </a-scene>
+  </body>
+</html>
